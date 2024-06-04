@@ -1,8 +1,8 @@
-CREATE DATABASE mydb;
+CREATE SCHEMA gestion;
 
-CREATE TABLE messages (
+CREATE TABLE gestion.messages (
     id SERIAL PRIMARY KEY,
     message TEXT NOT NULL
 );
 
-INSERT INTO messages (message) VALUES ('Hola, estos datos son de la base de datos');
+INSERT INTO gestion.messages (message) VALUES ('Hola, estos datos son de la base de datos');
